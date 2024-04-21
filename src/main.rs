@@ -1,5 +1,5 @@
-mod activations;
-pub use activations::{SIGMOID, IDENTITY, TANH, RELU};
+pub mod activations;
+use activations::SIGMOID;
 mod error;
 mod network;
 pub use error::{Error, Result};
